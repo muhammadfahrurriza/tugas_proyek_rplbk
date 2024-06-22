@@ -1,17 +1,13 @@
 @extends('frontpage.layouts.main')
 @section('container')
 {{-- Header --}}
-{{-- @include('frontpage.layouts.header') --}}
-{{-- Showcase --}}
-{{-- @include('frontpage.components.highlight') --}}
-{{-- Showcase --}}
+@include('frontpage.layouts.img')
 {{-- Section --}}
-<img src="/images\bg1.jpg" alt="">
 <section class="py-5 bg-light">
     <div class="container px-4 px-lg-5 my-5">
         <div class="text-center text-black">
-            <h1 class="display-4 fw-bolder">Nikmati Kenyamanan dan Keramahan dengan Barbershop Kami</h1>
-            <p class="lead fw-normal text-black-50 mb-0">Mantappu Jiwa</p>
+            <h1 class="display-4 fw-bolder">Datanglah dengan gaya lama, pulanglah dengan gaya baru</h1>
+            <p class="lead fw-normal text-black-50 mt-3">Di barbershop kami, setiap potongan membawa cerita baru</p>
         </div>
     </div>
 </section>

@@ -2,24 +2,20 @@
 
 namespace Database\Factories;
 
+use App\Models\Paket;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-/**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Handphone>
- */
-class HandphoneFactory extends Factory
+class PaketFactory extends Factory
 {
-    /**
-     * Define the model's default state.
-     *
-     * @return array<string, mixed>
-     */
+    protected $model = Paket::class;
+
     public function definition()
     {
         return [
-            'nama_paket' => $this->faker->word(),
-            'keterangan_paket' => $this->faker->word(),
-            'harga' => $this->faker->numberBetween()
+            'nama_paket' => $this->faker->sentence(2),
+            'keterangan_paket' => $this->faker->sentence(6),
+            'harga' => $this->faker->numberBetween(50000, 200000)
         ];
     }
 }
+
